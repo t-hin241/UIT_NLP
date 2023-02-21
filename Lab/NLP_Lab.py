@@ -41,7 +41,7 @@ def tokenizer(text, dict, is_show = False):
 
 #Tạo dictionary từ file txt đã xác định từ ghép---------
 
-with open('E:\\NLP\\40cau.txt', 'r', encoding='utf8') as f:
+with open('.\40cau.txt', 'r', encoding='utf8') as f:
     text = f.read()
 	#loại bỏ các dấu câu
     text1 = text.replace(".", " ")
@@ -74,7 +74,7 @@ print('Tan suat tu ghep:', count/len(wordlist))
 
 #Chạy hàm với file txt chứa 40 câu Tiếng Việt-----------
 
-with open('E:\\NLP\\40_viet.txt', 'r', encoding='utf8') as txt:
+with open('.\40_viet.txt', 'r', encoding='utf8') as txt:
     test = txt.read()
     sentences = test.split("\n")
     for sentence in sentences:
